@@ -11,7 +11,8 @@ body {
     width: 100%;
     height: 100%;
     font-family: "Monument", sans-serif;
-    background: rgba(255, 119, 0, 1);
+    background: black url(/img/ruido.png);
+    animation: ruido 0.5s steps(10) infinite;
 }
 header {
     position: absolute;
@@ -27,6 +28,7 @@ header nav {
     animation-fill-mode: forwards;
     animation-timing-function: ease;
     width: 100vw;
+    z-index: 1;
 }
 ul {
     outline: none;
@@ -47,41 +49,47 @@ a:hover {
 }
 main {
     width: 100%;
-    height: 100vh;
-    display: flex;
+    height: 100%;
 }
 /*  */
 
 #home {
-    height: 100vh;
-    width: 100vw;
-    background: linear-gradient(90deg, rgba(241, 245, 252, 1) 50%, rgba(255, 119, 0, 1) 50%);
+    height: 100%;
+    width: 100%;
+    /* background: linear-gradient(90deg, rgba(241, 245, 252, 1) 50%, rgba(255, 119, 0, 1) 50%); */
 }
-#home div {
+#home-content {
     position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
+    animation-name: swip-home-1;
     animation-duration: 2s;
     animation-fill-mode: forwards;
     animation-timing-function: ease;
     text-align: center;
 }
-#home-content {
-    animation-name: swip-home-1;
-}
 #home-content span {
     position: relative;
-    width: 100vw;
+    width: 90%;
 }
 #home-content span p {
     font-weight: bold;
-    font-size: 20vw;
+    font-size: 20em;
     letter-spacing: 1vw;
     display: inline-block;
 }
-#home-content span p:first-child {
+/*  #home-content span p:first-child {
     color: rgba(255, 119, 0, 1);
+}*/
+
+#home-content span #home-welcome {
+    font-size: 10em;
+    opacity: 0;
+    animation-name: welcome;
+    animation-duration: 1s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
 }
 .circulo {
     width: 40px;
@@ -96,11 +104,11 @@ main {
 /* PERFIL */
 
 #about {
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     display: flex;
     flex-wrap: wrap;
-    background: linear-gradient(180deg, rgba(255, 119, 0, 1) 50%, rgba(241, 245, 252, 1) 50%);
+    /* background: linear-gradient(180deg, rgba(255, 119, 0, 1) 50%, rgba(241, 245, 252, 1) 50%); */
 }
 #about_title {
     width: 100vw;
@@ -114,12 +122,10 @@ main {
     animation-fill-mode: forwards;
     animation-timing-function: ease;
 }
-#about_title h1 {
-    color: black;
-}
+#about_title h1 {}
 #about_list {
-    width: 100vw;
-    height: 40vh;
+    width: 100%;
+    height: 40%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -129,7 +135,7 @@ main {
     display: inherit;
     justify-content: inherit;
     align-items: inherit;
-    width: 50%
+    width: 50%;
 }
 #about_list ul li {
     display: inline-block;
@@ -154,18 +160,16 @@ main {
     text-align: center;
     display: flex;
 }
-#about-content div p {
-    color: black;
-    margin: 20px;
-}
+#about-content div p {}
 /* Servicios */
 
 #services {
     display: flex;
     flex-direction: column;
-    width: 100%;
-    height: 100%;
-    background: rgba(255, 119, 0, 1);
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    /* background: rgba(255, 119, 0, 1); */
 }
 #services-title {
     position: relative;
@@ -174,23 +178,21 @@ main {
     animation-fill-mode: forwards;
     animation-timing-function: ease;
     width: 100%;
-    height: 30%;
+    height: 20%;
 }
 #services-title h1 {
     position: relative;
-    color: #000;
     text-align: center;
 }
 .services-content {
-    width: 100%;
-    height: 40vh;
+    width: 60%;
+    height: 30vh;
     display: flex;
 }
 .services-content span {
-    width: 100%;
-    height: 100%;
+    width: 50%;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
 }
 .services-content div {
@@ -200,25 +202,24 @@ main {
 }
 .services-content div img {
     width: 100%;
-    height: 50%;
-    margin-bottom: 20px;
+    height: 60%;
+    margin-top: 50px;
 }
 .services-content span div h3 {
     width: 100%;
-    height: 15%;
+    height: 20%;
+    margin-top: 10px;
 }
 .services-content span div p {
-    color: black;
     width: 100%;
-    height: 35%;
 }
 /* Trabajos */
 
 #jobs {
     display: flex;
     flex-direction: column;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
 }
 #jobs-titile {
     position: relative;
@@ -248,12 +249,28 @@ main {
 }
 /* Animaciones */
 
+@keyframes ruido {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 150% 150%;
+    }
+}
 @keyframes swip-home-1 {
     from {
-        top: -50%;
+        top: -100%;
     }
     to {
-        top: 30%;
+        top: 15%;
+    }
+}
+@keyframes welcome {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
     }
 }
 @keyframes swip-bar {
