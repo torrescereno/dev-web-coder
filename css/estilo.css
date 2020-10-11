@@ -36,7 +36,7 @@ ul {
 nav ul li {
     display: inline-block;
     margin-right: 10px;
-    font-size: 0.9vw;
+    font-size: 1em;
 }
 a {
     position: relative;
@@ -51,7 +51,7 @@ main {
     width: 100%;
     height: 100%;
 }
-/*  */
+/* INICIO */
 
 #home {
     height: 100%;
@@ -107,145 +107,152 @@ main {
     width: 100vw;
     height: 100vh;
     display: flex;
-    flex-wrap: wrap;
-    /* background: linear-gradient(180deg, rgba(255, 119, 0, 1) 50%, rgba(241, 245, 252, 1) 50%); */
-}
-#about_title {
-    width: 100vw;
-    height: 10vh;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    position: relative;
-    animation-name: swip-title;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-    animation-timing-function: ease;
-}
-#about_title h1 {}
-#about_list {
-    width: 100%;
-    height: 40%;
-    display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
 }
-#about_list ul {
-    display: inherit;
-    justify-content: inherit;
-    align-items: inherit;
+#about-text {
+    width: 60%;
+    height: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+#about-text span {
+    width: 60%;
+    height: 20%;
+}
+#about-text span:first-child {
+    text-align: center;
+}
+#about-image {
+    width: 30%;
+    display: flex;
+    align-items: center;
+}
+#about-image img {
+    height: 50%;
+}
+/* SERVICIO TITULO */
+
+#services {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#services-title {
+    width: 70%;
+    height: 20%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+#services-title span:first-child {
     width: 50%;
 }
-#about_list ul li {
-    display: inline-block;
-    text-align: center;
-    margin: 20px;
+#services-title span:last-child {
+    width: 30%;
 }
-#about_list ul li img {
+#services-title span h1 {
+    margin-top: 10%;
+}
+#services-title span img {
     width: 100%;
     height: 100%;
 }
-#about-content {
-    width: 100vw;
-    height: 40vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-}
-#about-content div {
-    width: 50%;
-    height: 45vh;
-    text-align: center;
-    display: flex;
-}
-#about-content div p {}
-/* Servicios */
+/* SERVICIO CONTENIDO */
 
-#services {
+#services-content {
+    width: 70%;
+    height: 50%;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100vw;
-    height: 100vh;
-    /* background: rgba(255, 119, 0, 1); */
-}
-#services-title {
-    position: relative;
-    animation-name: swip-title;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-    animation-timing-function: ease;
-    width: 100%;
-    height: 20%;
-}
-#services-title h1 {
-    position: relative;
     text-align: center;
-}
-.services-content {
-    width: 60%;
-    height: 30vh;
-    display: flex;
-}
-.services-content span {
-    width: 50%;
-    display: flex;
     justify-content: center;
-    align-items: center;
+    margin-top: 5%;
 }
-.services-content div {
-    width: 50%;
+#services-content span {
+    width: 100%;
     height: 80%;
+    display: flex;
+    flex-wrap: wrap;
     text-align: center;
+    justify-content: center;
+    margin-top: 5%;
 }
-.services-content div img {
-    width: 100%;
-    height: 60%;
-    margin-top: 50px;
+#services-content span:first-child {
+    border-right: 5px solid white;
+    border-radius: 5px;
 }
-.services-content span div h3 {
-    width: 100%;
-    height: 20%;
-    margin-top: 10px;
+#services-content span:last-child {
+    border-left: 5px solid white;
+    border-radius: 5px;
 }
-.services-content span div p {
+#services-content span img {
     width: 100%;
+    height: 40%;
+    margin-top: 10%;
+}
+#services-content h3 {
+    width: 100%;
+    height: 10%;
+    margin-top: 5%;
+}
+#services-content p {
+    width: 50%;
+    height: 50%;
 }
 /* Trabajos */
 
 #jobs {
-    display: flex;
-    flex-direction: column;
     width: 100vw;
     height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 #jobs-titile {
-    position: relative;
-    animation-name: swip-title;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-    animation-timing-function: ease;
-    text-align: center;
     width: 100%;
     height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 #jobs-content {
+    width: 100%;
+    height: 50%;
     display: grid;
     grid-template-columns: repeat(3, 25%);
     grid-template-rows: repeat(2, 50%);
-    grid-row-gap: 10px;
+    grid-row-gap: 5%;
     justify-content: center;
-    width: 100%;
-    height: 50%;
+    margin-top: 2%;
 }
 #jobs-content div {
-    width: 90%;
+    width: 95%;
+    /* background: black url(/img/solid.jpg); */
+    /* Comment */
+    background: #457b9d;
+    transition: background 0.5s;
+    cursor: pointer;
 }
-#jobs-content div img {
+#jobs-content div p {
+    opacity: 0;
     width: 100%;
     height: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+#jobs-content p:hover {
+    animation-name: view-jobs;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+#jobs-content div:hover {
+    background: transparent;
 }
 /* Animaciones */
 
@@ -292,11 +299,11 @@ main {
         bottom: 0px;
     }
 }
-@keyframes swip-title {
+@keyframes view-jobs {
     from {
-        top: -50%;
+        opacity: 0;
     }
     to {
-        top: 10%;
+        opacity: 1;
     }
 }
