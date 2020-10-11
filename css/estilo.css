@@ -8,8 +8,8 @@
     text-decoration: none;
 }
 body {
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     font-family: "Monument", sans-serif;
     background: black url(/img/ruido.png);
     animation: ruido 0.5s steps(10) infinite;
@@ -22,6 +22,7 @@ header {
 header nav {
     position: inherit;
     display: flex;
+    align-items: center;
     justify-content: flex-end;
     animation-name: swip-bar;
     animation-duration: 1s;
@@ -38,11 +39,11 @@ nav ul li {
     margin-right: 10px;
     font-size: 1em;
 }
-a {
+nav ul li a {
     position: relative;
     font-weight: bold;
 }
-a:hover {
+nav ul li a:hover {
     animation-name: wkup-nav;
     animation-duration: 0.5s;
     animation-delay: 0.2s;
@@ -50,6 +51,13 @@ a:hover {
 main {
     width: 100%;
     height: 100%;
+}
+#principal {
+    opacity: 0;
+    animation-name: main;
+    animation-duration: 3s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
 }
 /* INICIO */
 
@@ -84,7 +92,7 @@ main {
 }*/
 
 #home-content span #home-welcome {
-    font-size: 10em;
+    font-size: 7.5em;
     opacity: 0;
     animation-name: welcome;
     animation-duration: 1s;
@@ -254,6 +262,115 @@ main {
 #jobs-content div:hover {
     background: transparent;
 }
+/* CONTACTO */
+
+#contact {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+#contact-title {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#contact-title h3 {
+    font-weight: bold;
+}
+#contact-title img {
+    height: 50%;
+    margin-left: 5%;
+}
+#contact-form {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+}
+form {
+    border: solid;
+    border-radius: 5px;
+    width: 30%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+form h1 {
+    margin-bottom: 7%;
+}
+input {
+    width: 80%;
+    height: 10%;
+    outline: 1px solid black;
+    margin: 2%;
+    color: white;
+    font-size: 1.2em;
+    text-align: center;
+    background: transparent;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+input:hover {
+    border: 1px solid grey;
+}
+form span {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+}
+form span button {
+    width: 39%;
+    margin: 5px;
+    cursor: pointer;
+    background: transparent;
+    font-weight: bold;
+}
+form span button:hover {
+    border: 1px solid white;
+    border-radius: 5px;
+}
+/* FOOTER */
+
+footer {
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer div {
+    width: 30vw;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 5px solid white;
+}
+footer div span {
+    width: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer div span a {
+    margin-right: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+footer div span a img {
+    width: 100%;
+    height: 100%;
+}
 /* Animaciones */
 
 @keyframes ruido {
@@ -300,6 +417,14 @@ main {
     }
 }
 @keyframes view-jobs {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes main {
     from {
         opacity: 0;
     }

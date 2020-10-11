@@ -11,11 +11,6 @@
     <body>
         <header>
             <nav>
-                <!-- LOGO -->
-                <a href="">
-                    <img src="">
-                    </img>
-                </a>
                 <ul>
                     <li>
                         <a href="index.html">
@@ -45,56 +40,59 @@
                 </ul>
             </nav>
         </header>
-        <section id="contenedor">
-            <form action="" method="POST">
-                <!-- nombre -->
-                <label for="nombre">
-                    Nombre:
-                </label>
-                <br/>
-                <input autofocus="" required="" type="text">
-                </input>
-                <!-- apellido -->
-                <label for="apellido">
-                    Apellido:
-                </label>
-                <br/>
-                <input required="" type="text">
-                </input>
-                <!-- correo -->
-                <label for="email">
-                    Email:
-                </label>
-                <br/>
-                <input required="" type="email">
-                </input>
-                <!-- comentarios -->
-                <label for="comentario">
-                    Comentarios:
-                </label>
-                <br/>
-                <textarea cols="30" id="" name="comentario" rows="10">
-                </textarea>
-                <!-- botones -->
-                <input type="reset" value="Limpiar">
-                </input>
-                <input name="Enviar" type="submit">
-                </input>
-            </form>
-        </section>
-        <!-- FOOTER -->
-        <footer>
-            <div>
-                <p>
-                    Luis Torres
-                </p>
-            </div>
-            <div>
-                <!-- redes sociales -->
-                <a href="">
-                    <img alt="" src=""/>
-                </a>
-            </div>
-        </footer>
+        <main id="principal">
+            <section id="contact">
+                <div id="contact-title">
+                    <h3>
+                        Necesitas más información ?
+                    </h3>
+                    <img alt="" src="img/contaco.svg"/>
+                </div>
+                <div id="contact-form">
+                    <form action="" method="POST">
+                        <h1>
+                            HABLEMOS
+                        </h1>
+                        <!-- nombre -->
+                        <input autofocus="" placeholder="Nombre" required="" type="text"/>
+                        <!-- apellido -->
+                        <input placeholder="Apellido" type="text"/>
+                        <!-- correo -->
+                        <input placeholder="Email" required="" type="email"/>
+                        <!-- botones -->
+                        <span>
+                            <button alt="Borrar" name="Borrar" type="reset">
+                                BORRAR
+                            </button>
+                            <button name="Enviar" type="submit">
+                                ENVIAR
+                            </button>
+                        </span>
+                    </form>
+                </div>
+                <!-- FOOTER -->
+                <footer>
+                    <div>
+                        <p>
+                            © Luis Cereño
+                        </p>
+                        <p>
+                            2020
+                        </p>
+                        <span>
+                            <a href="https://www.instagram.com/torrescereno/">
+                                <img alt="" src="img/instagram.svg"/>
+                            </a>
+                            <a href="https://github.com/torrescereno">
+                                <img alt="" src="img/github.svg"/>
+                            </a>
+                            <a href="https://www.linkedin.com/in/luis-t-cere%C3%B1o-488510159/">
+                                <img alt="" src="img/linkedin.svg"/>
+                            </a>
+                        </span>
+                    </div>
+                </footer>
+            </section>
+        </main>
     </body>
 </html>
