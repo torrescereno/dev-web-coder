@@ -66,9 +66,9 @@ main {
     height: 100%;
     width: 100%;
     font-family: 'Permanent Marker', cursive;
-    /* background: linear-gradient(90deg, rgba(241, 245, 252, 1) 50%, rgba(255, 119, 0, 1) 50%); */
 }
 #home-content {
+    height: 60%;
     position: absolute;
     display: flex;
     justify-content: center;
@@ -80,21 +80,17 @@ main {
     text-align: center;
 }
 #home-content span {
-    position: relative;
     width: 90%;
+    position: relative;
 }
 #home-content span p {
     font-weight: bold;
-    font-size: 20em;
+    font-size: 20vw;
     letter-spacing: 1vw;
     display: inline-block;
 }
-/*  #home-content span p:first-child {
-    color: rgba(255, 119, 0, 1);
-}*/
-
 #home-content span #home-welcome {
-    font-size: 8.5em;
+    font-size: 9.5vw;
     opacity: 0;
     animation-name: welcome;
     animation-duration: 1s;
@@ -424,3 +420,30 @@ footer div span a img {
         bottom: 0px;
     }
 }
+/* Media Queries  */
+
+/* Mobile Styles */
+
+@media only screen and (max-width: 370px) {
+    header nav {
+        height: 30vh;
+    }
+    nav ul li {
+        display: block;
+        margin-top: 2vh;
+    }
+    @keyframes swip-bar {
+        from {
+            top: -40vh;
+        }
+        to {
+            top: 0vh;
+        }
+    }
+}
+/* Tablet Styles */
+
+@media only screen and (min-width: 401px) and (max-width: 960px) {}
+/* Desktop Styles */
+
+@media only screen and (min-width: 961px) {}
