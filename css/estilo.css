@@ -8,8 +8,8 @@
     text-decoration: none;
 }
 body {
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     font-family: 'Economica', sans-serif;
     background: black url(/img/ruido.png);
     animation: ruido 0.5s steps(10) infinite;
@@ -17,7 +17,7 @@ body {
 header {
     position: absolute;
     margin-top: 1%;
-    width: 100vw;
+    width: 100%;
 }
 header nav {
     position: inherit;
@@ -28,7 +28,7 @@ header nav {
     animation-duration: 1s;
     animation-fill-mode: forwards;
     animation-timing-function: ease;
-    width: 100vw;
+    width: 100%;
     z-index: 1;
 }
 ul {
@@ -48,9 +48,6 @@ nav ul li a:hover {
     animation-duration: 0.5s;
     animation-delay: 0.2s;
     animation-fill-mode: forwards;
-}
-main {
-    width: 100%;
 }
 #principal {
     opacity: 0;
@@ -109,19 +106,17 @@ main {
 /* PERFIL */
 
 #about {
-    width: 100vw;
-    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 #about-text {
     width: 60%;
-    height: 50%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    margin-top: 10%;
 }
 #about-text span {
     width: 60%;
@@ -130,6 +125,7 @@ main {
     text-align: center;
     font-family: 'Permanent Marker', cursive;
     font-size: 3.9em;
+    margin-bottom: 5%;
 }
 #about-text span:last-child {
     font-size: 1.3em;
@@ -138,12 +134,13 @@ main {
     width: 30%;
     display: flex;
     align-items: center;
+    justify-content: center;
+    margin-top: 10%;
 }
 /* SERVICIO TITULO */
 
 #services {
-    width: 100%;
-    height: 100%;
+    /*height: 100vh;  */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -151,21 +148,24 @@ main {
 }
 #services-title {
     width: 70%;
-    height: 20%;
+    margin-top: 6vw;
     display: flex;
     text-align: center;
-    justify-content: center;
+    justify-content: space-around;
 }
 #services-title span:first-child {
     width: 50%;
     font-family: 'Permanent Marker', cursive;
-    font-size: 3.5em;
+    font-size: 4.5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 #services-title span:last-child {
-    width: 30%;
-}
-#services-title span h1 {
-    margin-top: 10%;
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 #services-title span img {
     width: 100%;
@@ -179,16 +179,14 @@ main {
     display: flex;
     text-align: center;
     justify-content: center;
-    margin-top: 5%;
+    margin-top: 4%;
 }
 #services-content span {
     width: 100%;
-    height: 80%;
     display: flex;
     flex-wrap: wrap;
     text-align: center;
     justify-content: center;
-    margin-top: 5%;
 }
 #services-content span:first-child {
     border-right: 5px solid white;
@@ -199,51 +197,44 @@ main {
     border-radius: 5px;
 }
 #services-content span img {
-    width: 100%;
-    height: 40%;
-    margin-top: 10%;
+    width: 50%;
 }
 #services-content h1 {
     width: 100%;
-    height: 10%;
-    margin-top: 5%;
+    margin-top: 10%;
 }
 #services-content p {
     width: 50%;
-    height: 50%;
     font-size: 1.1em;
+    margin-top: 5%;
 }
 /* Trabajos */
 
 #jobs {
-    width: 100vw;
-    height: 100vh;
     display: flex;
     flex-direction: column;
 }
 #jobs-titile {
     width: 100%;
-    height: 30%;
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: 'Permanent Marker', cursive;
-    font-size: 3em;
+    font-size: 3vw;
+    margin-top: 6vw;
 }
 #jobs-content {
     width: 100%;
-    height: 50%;
+    height: 30vw;
     display: grid;
     grid-template-columns: repeat(3, 25%);
     grid-template-rows: repeat(2, 50%);
     grid-row-gap: 5%;
     justify-content: center;
-    margin-top: 2%;
+    margin-top: 3vw;
 }
 #jobs-content div {
     width: 95%;
-    /* background: black url(/img/solid.jpg); */
-    /* Comment */
     background: #457b9d;
     transition: background 0.5s;
     cursor: pointer;
