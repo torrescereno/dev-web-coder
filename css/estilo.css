@@ -109,7 +109,6 @@ nav ul li a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 5%;
 }
 #about-text {
     width: 60%;
@@ -118,6 +117,7 @@ nav ul li a:hover {
     justify-content: center;
     align-items: center;
     margin-top: 10%;
+    text-align: justify;
 }
 #about-text span {
     width: 60%;
@@ -418,7 +418,7 @@ footer div span a img {
 
 /* -------- Dispositivos moviles 480--------  */
 
-@media screen and (max-width: 468px) {
+@media screen and (max-width: 480px) {
     /*NAV*/
     header nav {
         justify-content: center;
@@ -451,7 +451,6 @@ footer div span a img {
     }
     #about-text span:last-child {
         font-size: 100%;
-        text-align: justify;
     }
     #about-image {
         width: 100%;
@@ -578,11 +577,10 @@ footer div span a img {
         width: 100%;
     }
     #about-text span:first-child {
-        font-size: 150%;
+        font-size: 200%;
     }
     #about-text span:last-child {
-        font-size: 100%;
-        text-align: justify;
+        font-size: 120%;
     }
     #about-image {
         width: 100%;
@@ -667,120 +665,26 @@ footer div span a img {
         width: 70vw;
     }
     footer div span {
-        width: 30%;
+        width: 25%;
     }
 }
 /* 769px — 1024px: Small screens, laptops */
 
 @media (min-width: 769px) and (max-width:1024px) {
-    /*PEFIL*/
-    #about {
-        flex-direction: column;
-    }
-    #about-text {
-        position: relative;
-        order: 2;
-        width: 80%;
-        margin-bottom: 10%;
-    }
-    #about-text span {
-        width: 100%;
-    }
-    #about-text span:first-child {
-        font-size: 200%;
-    }
     #about-text span:last-child {
         font-size: 100%;
-        text-align: justify;
-    }
-    #about-image {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        order: 1;
-    }
-    #about-image img {
-        width: 50%;
-    }
-    /*SERVICIOS*/
-    #services-title {
-        width: 90%;
-        margin-top: 15%;
-        justify-content: space-between;
-    }
-    #services-title span:first-child {
-        width: 70%;
-        font-size: 7vw;
-    }
-    #services-title span:last-child {
-        width: 20%;
-    }
-    #services-content {
-        flex-direction: column;
-        justify-content: flex-start;
-    }
-    #services-content span {
-        width: 100%;
-        margin-top: 10%;
-        margin-bottom: 10%;
-    }
-    #services-content span:first-child {
-        border-bottom: 5px solid white;
-        border-right: none;
-        padding-bottom: 10%;
-    }
-    #services-content span:last-child {
-        border-top: 5px solid white;
-        border-left: none;
-        padding-top: 10%;
-    }
-    #services-content span p {
-        width: 70%;
-    }
-    /*TRABAJOS*/
-    #jobs-titile {
-        font-size: 10vw;
-        margin-top: 15vw;
-    }
-    #jobs-content {
-        height: 300px;
-        margin-top: 5vw;
-        grid-template-columns: repeat(1, 80%);
-        grid-template-rows: repeat(6, 100%);
-    }
-    #jobs-content div {
-        width: 100%;
-    }
-    #jobs-content div:last-child {
-        margin-bottom: 15px;
-    }
-    /* FORMULARIO */
-    form {
-        width: 75%;
-    }
-    form h1 {
-        margin-bottom: 7%;
-    }
-    input {
-        font-size: 1em;
-    }
-    /* FOOTER */
-    footer {
-        height: 10%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    footer div {
-        width: 70vw;
-    }
-    footer div span {
-        width: 15%;
     }
 }
 /* 1025px — 1200px: Desktops, large screens */
 
 @media (min-width: 1025px) and (max-width:1200px) {
+    #about-text span:last-child {
+        font-size: 200%;
+    }
+}
+/* 769px — 1200px Desktops, large screens por defecto */
+
+@media (min-width: 769px) and (max-width:1200px) {
     /*PEFIL*/
     #about {
         flex-direction: column;
@@ -795,11 +699,10 @@ footer div span a img {
         width: 100%;
     }
     #about-text span:first-child {
-        font-size: 200%;
+        font-size: 250%;
     }
     #about-text span:last-child {
         font-size: 200%;
-        text-align: justify;
     }
     #about-image {
         width: 100%;
