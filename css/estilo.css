@@ -109,6 +109,7 @@ nav ul li a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 5%;
 }
 #about-text {
     width: 60%;
@@ -145,10 +146,11 @@ nav ul li a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 5%;
 }
 #services-title {
     width: 70%;
-    margin-top: 6vw;
+    margin-top: 5vw;
     display: flex;
     text-align: center;
     justify-content: space-around;
@@ -205,7 +207,7 @@ nav ul li a:hover {
 }
 #services-content p {
     width: 50%;
-    font-size: 1.1em;
+    font-size: 1.3em;
     margin-top: 5%;
 }
 /* Trabajos */
@@ -213,6 +215,7 @@ nav ul li a:hover {
 #jobs {
     display: flex;
     flex-direction: column;
+    margin-bottom: 3%;
 }
 #jobs-titile {
     width: 100%;
@@ -413,13 +416,13 @@ footer div span a img {
 }
 /* Media Queries  */
 
-/* -------- Dispositivos moviles 320--------  */
+/* -------- Dispositivos moviles 480--------  */
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 468px) {
     /*NAV*/
     header nav {
         justify-content: center;
-        margin-top: 10%;
+        margin-top: 5%;
     }
     ul {
         display: flex;
@@ -467,15 +470,16 @@ footer div span a img {
     #services-title {
         flex-direction: column;
         align-items: center;
-        margin-top: 30%;
+        margin-top: 20%;
     }
     #services-title span:first-child {
         width: 100%;
-        font-size: 2em;
+        font-size: 10vw;
         order: 2;
     }
     #services-title span:last-child {
         width: 40%;
+        margin-bottom: 10%;
         order: 1;
     }
     #services-content {
@@ -503,7 +507,7 @@ footer div span a img {
     /*TRABAJOS*/
     #jobs-titile {
         font-size: 10vw;
-        margin-top: 30vw;
+        margin-top: 20vw;
     }
     #jobs-content {
         height: 100%;
@@ -525,9 +529,9 @@ footer div span a img {
         font-size: 2em;
     }
     #contact-title img {
-        height: 50%;
+        height: 40%;
         margin-left: 0%;
-        margin-top: 10%;
+        margin-top: 5%;
     }
     /* FORMULARIO */
     form {
@@ -551,5 +555,334 @@ footer div span a img {
     }
     footer div span {
         width: 30%;
+    }
+}
+/* 481px — 768px: iPads, Tablets */
+
+@media (min-width: 481px) and (max-width:768px) {
+    /* NAV */
+    header nav {
+        margin-top: 2%;
+    }
+    /*PEFIL*/
+    #about {
+        flex-direction: column;
+    }
+    #about-text {
+        position: relative;
+        order: 2;
+        width: 80%;
+        margin-bottom: 10%;
+    }
+    #about-text span {
+        width: 100%;
+    }
+    #about-text span:first-child {
+        font-size: 150%;
+    }
+    #about-text span:last-child {
+        font-size: 100%;
+        text-align: justify;
+    }
+    #about-image {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        order: 1;
+        margin-top: 20vw;
+    }
+    #about-image img {
+        width: 50%;
+    }
+    /*SERVICIOS*/
+    #services-title {
+        width: 90%;
+        margin-top: 15%;
+        justify-content: space-between;
+    }
+    #services-title span:first-child {
+        width: 70%;
+        font-size: 7vw;
+    }
+    #services-title span:last-child {
+        width: 20%;
+    }
+    #services-content {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    #services-content span {
+        width: 100%;
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+    #services-content span:first-child {
+        border-bottom: 5px solid white;
+        border-right: none;
+        padding-bottom: 10%;
+    }
+    #services-content span:last-child {
+        border-top: 5px solid white;
+        border-left: none;
+        padding-top: 10%;
+    }
+    #services-content span p {
+        width: 70%;
+    }
+    /*TRABAJOS*/
+    #jobs-titile {
+        font-size: 10vw;
+        margin-top: 15vw;
+    }
+    #jobs-content {
+        height: 300px;
+        margin-top: 5vw;
+        grid-template-columns: repeat(1, 80%);
+        grid-template-rows: repeat(6, 100%);
+    }
+    #jobs-content div {
+        width: 100%;
+    }
+    #jobs-content div:last-child {
+        margin-bottom: 15px;
+    }
+    /* FORMULARIO */
+    form {
+        width: 75%;
+    }
+    form h1 {
+        margin-bottom: 7%;
+    }
+    input {
+        font-size: 1em;
+    }
+    /* FOOTER */
+    footer {
+        height: 10%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    footer div {
+        width: 70vw;
+    }
+    footer div span {
+        width: 30%;
+    }
+}
+/* 769px — 1024px: Small screens, laptops */
+
+@media (min-width: 769px) and (max-width:1024px) {
+    /*PEFIL*/
+    #about {
+        flex-direction: column;
+    }
+    #about-text {
+        position: relative;
+        order: 2;
+        width: 80%;
+        margin-bottom: 10%;
+    }
+    #about-text span {
+        width: 100%;
+    }
+    #about-text span:first-child {
+        font-size: 200%;
+    }
+    #about-text span:last-child {
+        font-size: 100%;
+        text-align: justify;
+    }
+    #about-image {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        order: 1;
+    }
+    #about-image img {
+        width: 50%;
+    }
+    /*SERVICIOS*/
+    #services-title {
+        width: 90%;
+        margin-top: 15%;
+        justify-content: space-between;
+    }
+    #services-title span:first-child {
+        width: 70%;
+        font-size: 7vw;
+    }
+    #services-title span:last-child {
+        width: 20%;
+    }
+    #services-content {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    #services-content span {
+        width: 100%;
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+    #services-content span:first-child {
+        border-bottom: 5px solid white;
+        border-right: none;
+        padding-bottom: 10%;
+    }
+    #services-content span:last-child {
+        border-top: 5px solid white;
+        border-left: none;
+        padding-top: 10%;
+    }
+    #services-content span p {
+        width: 70%;
+    }
+    /*TRABAJOS*/
+    #jobs-titile {
+        font-size: 10vw;
+        margin-top: 15vw;
+    }
+    #jobs-content {
+        height: 300px;
+        margin-top: 5vw;
+        grid-template-columns: repeat(1, 80%);
+        grid-template-rows: repeat(6, 100%);
+    }
+    #jobs-content div {
+        width: 100%;
+    }
+    #jobs-content div:last-child {
+        margin-bottom: 15px;
+    }
+    /* FORMULARIO */
+    form {
+        width: 75%;
+    }
+    form h1 {
+        margin-bottom: 7%;
+    }
+    input {
+        font-size: 1em;
+    }
+    /* FOOTER */
+    footer {
+        height: 10%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    footer div {
+        width: 70vw;
+    }
+    footer div span {
+        width: 15%;
+    }
+}
+/* 1025px — 1200px: Desktops, large screens */
+
+@media (min-width: 1025px) and (max-width:1200px) {
+    /*PEFIL*/
+    #about {
+        flex-direction: column;
+    }
+    #about-text {
+        position: relative;
+        order: 2;
+        width: 80%;
+        margin-bottom: 10%;
+    }
+    #about-text span {
+        width: 100%;
+    }
+    #about-text span:first-child {
+        font-size: 200%;
+    }
+    #about-text span:last-child {
+        font-size: 200%;
+        text-align: justify;
+    }
+    #about-image {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        order: 1;
+    }
+    #about-image img {
+        width: 50%;
+    }
+    /*SERVICIOS*/
+    #services-title {
+        width: 90%;
+        margin-top: 15%;
+        justify-content: space-between;
+    }
+    #services-title span:first-child {
+        width: 70%;
+        font-size: 7vw;
+    }
+    #services-title span:last-child {
+        width: 20%;
+    }
+    #services-content {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    #services-content span {
+        width: 100%;
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+    #services-content span:first-child {
+        border-bottom: 5px solid white;
+        border-right: none;
+        padding-bottom: 10%;
+    }
+    #services-content span:last-child {
+        border-top: 5px solid white;
+        border-left: none;
+        padding-top: 10%;
+    }
+    #services-content span p {
+        width: 70%;
+    }
+    /*TRABAJOS*/
+    #jobs-titile {
+        font-size: 10vw;
+        margin-top: 15vw;
+    }
+    #jobs-content {
+        height: 300px;
+        margin-top: 5vw;
+        grid-template-columns: repeat(1, 80%);
+        grid-template-rows: repeat(6, 100%);
+    }
+    #jobs-content div {
+        width: 100%;
+    }
+    #jobs-content div:last-child {
+        margin-bottom: 15px;
+    }
+    /* FORMULARIO */
+    form {
+        width: 75%;
+    }
+    form h1 {
+        margin-bottom: 7%;
+    }
+    input {
+        font-size: 1em;
+    }
+    /* FOOTER */
+    footer {
+        height: 10%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    footer div {
+        width: 70vw;
+    }
+    footer div span {
+        width: 15%;
     }
 }
