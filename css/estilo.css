@@ -44,10 +44,7 @@ nav ul li a {
     font-weight: bold;
 }
 nav ul li a:hover {
-    animation-name: wkup-nav;
-    animation-duration: 0.5s;
-    animation-delay: 0.2s;
-    animation-fill-mode: forwards;
+    animation: wkup-nav 0.5s 0.2s forwards;
 }
 #principal {
     opacity: 0;
