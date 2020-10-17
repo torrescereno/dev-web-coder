@@ -231,12 +231,7 @@ nav ul li a:hover {
 /* CONTACTO */
 
 #contact {
-    width: 100vw;
-    height: 100vh;
     min-height: 800px;
-    outline: 1px solid red;
-    display: flex;
-    flex-direction: column;
 }
 #contact-title {
     width: 100%;
