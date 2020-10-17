@@ -107,25 +107,21 @@ nav ul li a:hover {
 /* PERFIL */
 
 #about-text {
-    width: 70%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     text-align: justify;
 }
-#about-text span {
-    width: 60%;
-}
 #about-text span:first-child {
     text-align: center;
     font-family: 'Permanent Marker', cursive;
-    font-size: 4em;
-    margin-bottom: 5%;
+    font-size: 3.5em;
+    margin-bottom: 3%;
     width: 100%;
 }
 #about-text span:last-child {
-    font-size: 1.5em;
+    font-size: 1.3em;
     width: 80%;
 }
 #about-image {
@@ -133,14 +129,14 @@ nav ul li a:hover {
     justify-content: center;
 }
 #about-image img {
-    width: 120%;
-    height: 120%;
+    width: 100%;
+    height: 100%;
 }
 /* SERVICIO TITULO */
 
 #services-title {
-    width: 60%;
     margin-top: 5vw;
+    text-align: center;
 }
 #services-title span h1 {
     font-family: 'Permanent Marker', cursive;
@@ -157,7 +153,6 @@ nav ul li a:hover {
     margin-top: 4%;
 }
 #services-content span {
-    width: 100%;
     display: flex;
     flex-wrap: wrap;
     text-align: center;
@@ -238,6 +233,8 @@ nav ul li a:hover {
 #contact {
     width: 100vw;
     height: 100vh;
+    min-height: 800px;
+    outline: 1px solid red;
     display: flex;
     flex-direction: column;
 }
@@ -311,34 +308,20 @@ form span button:hover {
 }
 /* FOOTER */
 
-footer {
-    height: 10%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-footer div {
-    width: 30vw;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+#footer-content {
     border-top: 5px solid white;
 }
-footer div span {
-    width: 15%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+#footer-content p {
+    margin: 0;
 }
-footer div span a {
-    margin-right: 10%;
+#footer-content span {
+    width: 7%;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
 }
-footer div span a img {
+#footer-content span a {
+    margin: 5%;
+}
+#footer-content span a img {
     width: 100%;
     height: 100%;
 }
@@ -429,23 +412,17 @@ footer div span a img {
     #services-title {
         margin-top: 20%;
     }
-    #services-title span {
-        text-align: center;
-    }
-    #services-title span img {
-        width: 50%;
-        height: 50%;
-    }
     #services-title span:first-child {
-        font-size: 2vw;
+        font-size: 3vw;
         order: 2;
     }
     #services-title span:last-child {
-        margin-bottom: 10%;
+        height: 20vw;
+        margin-bottom: 5%;
     }
     #services-content span {
         width: 100%;
-        margin-top: 10%;
+        margin-top: 5%;
         padding-bottom: 5%;
         padding-top: 5%;
     }
@@ -500,17 +477,12 @@ footer div span a img {
         font-size: 1em;
     }
     /* FOOTER */
-    footer {
-        height: 10%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+    #footer-content span {
+        width: 15%;
     }
-    footer div {
-        width: 70vw;
-    }
-    footer div span {
-        width: 30%;
+    #footer-content span a img {
+        width: 120%;
+        height: 120%;
     }
 }
 /* 481px — 768px: iPads, Tablets */
@@ -549,21 +521,15 @@ footer div span a img {
     }
     /*SERVICIOS*/
     #services-title {
-        width: 80%;
         margin-top: 15%;
-    }
-    #services-title span {
-        text-align: center;
-    }
-    #services-title span img {
-        width: 50%;
-        height: 50%;
     }
     #services-title span:first-child {
         font-size: 2vw;
     }
+    #services-title span:last-child {
+        height: 12vw;
+    }
     #services-content span {
-        width: 100%;
         margin-top: 10%;
         padding-bottom: 5%;
         padding-top: 5%;
@@ -607,17 +573,8 @@ footer div span a img {
         font-size: 1em;
     }
     /* FOOTER */
-    footer {
-        height: 10%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    footer div {
-        width: 70vw;
-    }
-    footer div span {
-        width: 25%;
+    #footer-content span {
+        width: 15%;
     }
 }
 /* 769px — 1024px: Small screens, laptops */
@@ -645,7 +602,7 @@ footer div span a img {
         position: relative;
         order: 2;
         width: 80%;
-        margin-bottom: 10%;
+        margin-bottom: 5%;
     }
     #about-text span {
         width: 100%;
@@ -671,10 +628,10 @@ footer div span a img {
         justify-content: space-between;
     }
     #services-title span:first-child {
-        font-size: 2.5vw;
+        font-size: 2vw;
     }
     #services-title span:last-child {
-        width: 20%;
+        height: 12vw;
     }
     #services-content span {
         margin-top: 5%;
@@ -719,16 +676,10 @@ footer div span a img {
         font-size: 1em;
     }
     /* FOOTER */
-    footer {
-        height: 10%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+    #footer-content {
+        width: 85%;
     }
-    footer div {
-        width: 70vw;
-    }
-    footer div span {
+    #footer-content span {
         width: 15%;
     }
 }
