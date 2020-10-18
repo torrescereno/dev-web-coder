@@ -48,45 +48,96 @@
             </nav>
         </header>
         <main class="container-fluid" id="principal">
-            <div class="row justify-content-center align-items-end vh-100 p-0 m-0" id="jobs">
-                <div class="row" id="jobs-titile">
-                    <h1>
+            <div class="row justify-content-center align-items-center vh-100 p-0 m-0">
+                <!-- TITULO -->
+                <div class="row justify-content-center align-items-center w-100 p-0 m-0" id="jobs-titile">
+                    <h1 class="">
                         TRABAJOS
                     </h1>
                 </div>
-                <div class="row" id="jobs-content">
-                    <div>
-                        <p>
-                            Proyecto 1
-                        </p>
+                <!-- CARRUSEL -->
+                <div class="row justify-content-center align-items-center">
+                    <div class="carousel slide" data-ride="carousel" id="galeria">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="row justify-content-center align-items-center p-0 m-0">
+                                    <div class="jobs-content">
+                                        <p>
+                                            <!-- DETALLES DEL PROYECTO -->
+                                            Proyecto 1
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row justify-content-center align-items-center p-0 m-0">
+                                    <div class="jobs-content">
+                                        <p>
+                                            <!-- DETALLES DEL PROYECTO -->
+                                            Proyecto 2
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row justify-content-center align-items-center p-0 m-0">
+                                    <div class="jobs-content">
+                                        <p>
+                                            <!-- DETALLES DEL PROYECTO -->
+                                            Proyecto 3
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div>
-                        <p>
-                            Proyecto 2
-                        </p>
-                    </div>
-                    <div>
-                        <p>
-                            Proyecto 3
-                        </p>
-                    </div>
-                    <div>
-                        <p>
-                            Proyecto 4
-                        </p>
-                    </div>
-                    <div>
-                        <p>
-                            Proyecto 5
-                        </p>
-                    </div>
-                    <div>
-                        <p>
-                            Proyecto 6
-                        </p>
-                    </div>
+                    <a class="carousel-control-prev" data-slide="prev" href="#galeria" role="button">
+                        <span aria-hidden="true" class="carousel-control-prev-icon">
+                        </span>
+                        <span class="sr-only">
+                            Previo
+                        </span>
+                    </a>
+                    <a class="carousel-control-next" data-slide="next" href="#galeria" role="button">
+                        <span aria-hidden="true" class="carousel-control-next-icon">
+                        </span>
+                        <span class="sr-only">
+                            Siguiente
+                        </span>
+                    </a>
                 </div>
+                <!-- FOOTER -->
+                <footer class="row justify-content-end align-items-end w-75 p-0 m-0" id="footer-main">
+                    <div class="container-fluid">
+                        <div class="row justify-content-center align-items-center">
+                            <div class="row justify-content-between align-items-center" id="footer-content">
+                                <p>
+                                    © Luis Cereño
+                                </p>
+                                <p>
+                                    2020
+                                </p>
+                                <span>
+                                    <a href="https://www.instagram.com/torrescereno/">
+                                        <img alt="" src="img/instagram.svg"/>
+                                    </a>
+                                    <a href="https://github.com/torrescereno">
+                                        <img alt="" src="img/github.svg"/>
+                                    </a>
+                                    <a href="https://www.linkedin.com/in/luis-t-cere%C3%B1o-488510159/">
+                                        <img alt="" src="img/linkedin.svg"/>
+                                    </a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
             </div>
         </main>
     </body>
+    <!-- JS & JQUERY Bootstrap 4.5 -->
+    <script crossorigin="anonymous" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" src="https://code.jquery.com/jquery-3.5.1.slim.min.js">
+    </script>
+    <script crossorigin="anonymous" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js">
+    </script>
 </html>

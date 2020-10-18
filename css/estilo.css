@@ -150,7 +150,6 @@ nav ul li a:hover {
 
 #services-content {
     width: 70%;
-    margin-top: 4%;
 }
 #services-content span {
     display: flex;
@@ -177,39 +176,22 @@ nav ul li a:hover {
     width: 60%;
     margin-top: 5%;
 }
-/* Trabajos */
+/* TRABAJOS */
 
-#jobs {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 3%;
-}
 #jobs-titile {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     font-family: 'Permanent Marker', cursive;
-    font-size: 3vw;
-    margin-top: 6vw;
 }
-#jobs-content {
-    width: 100%;
-    height: 30vw;
-    display: grid;
-    grid-template-columns: repeat(3, 25%);
-    grid-template-rows: repeat(2, 50%);
-    grid-row-gap: 5%;
-    justify-content: center;
-    margin-top: 3vw;
+#jobs-titile h1 {
+    font-size: 5vw;
 }
-#jobs-content div {
-    width: 95%;
+.jobs-content {
+    width: 50vw;
+    height: 50vh;
     background: #457b9d;
     transition: background 0.5s;
     cursor: pointer;
 }
-#jobs-content div p {
+.jobs-content p {
     opacity: 0;
     width: 100%;
     height: 100%;
@@ -218,19 +200,19 @@ nav ul li a:hover {
     justify-content: center;
     align-items: center;
 }
-#jobs-content p:hover {
+.jobs-content p:hover {
     animation-name: welcome;
     animation-duration: 1s;
     animation-fill-mode: forwards;
 }
-#jobs-content div:hover {
+.jobs-content:hover {
     background: transparent;
-    outline: 1px solid white;
+    border: 1px solid white;
 }
 /* CONTACTO */
 
 #contact {
-    min-height: 800px;
+    min-height: 720px;
 }
 #contact-title {
     width: 100%;
@@ -432,20 +414,12 @@ form span button:hover {
         width: 70%;
     }
     /*TRABAJOS*/
-    #jobs-titile {
+    #jobs-titile h1 {
         font-size: 10vw;
-        margin-top: 20vw;
+        margin-top: 10vw;
     }
-    #jobs-content {
-        height: 100%;
-        margin-top: 5vw;
-        grid-template-columns: repeat(1, 70%);
-        grid-template-rows: repeat(6, 100%);
-        grid-row-gap: 0%;
-    }
-    #jobs-content div {
-        width: 100%;
-        margin-bottom: 10px;
+    .jobs-content {
+        width: 70vw;
     }
     /*CONTACTO*/
     #contact-title {
@@ -540,21 +514,12 @@ form span button:hover {
         width: 80%;
     }
     /*TRABAJOS*/
-    #jobs-titile {
+    #jobs-titile h1 {
         font-size: 10vw;
-        margin-top: 15vw;
+        margin-top: 10vw;
     }
-    #jobs-content {
-        height: 300px;
-        margin-top: 5vw;
-        grid-template-columns: repeat(1, 80%);
-        grid-template-rows: repeat(6, 100%);
-    }
-    #jobs-content div {
-        width: 100%;
-    }
-    #jobs-content div:last-child {
-        margin-bottom: 15px;
+    .jobs-content {
+        width: 70vw;
     }
     /* FORMULARIO */
     form {
@@ -643,21 +608,11 @@ form span button:hover {
         width: 80%;
     }
     /*TRABAJOS*/
-    #jobs-titile {
+    #jobs-titile h1 {
         font-size: 10vw;
-        margin-top: 15vw;
     }
-    #jobs-content {
-        height: 300px;
-        margin-top: 5vw;
-        grid-template-columns: repeat(1, 80%);
-        grid-template-rows: repeat(6, 100%);
-    }
-    #jobs-content div {
-        width: 100%;
-    }
-    #jobs-content div:last-child {
-        margin-bottom: 15px;
+    .jobs-content {
+        width: 60vw;
     }
     /* FORMULARIO */
     form {
