@@ -387,30 +387,23 @@ form span button:hover {
     /*SERVICIOS*/
     #services-title {
         margin-top: 20%;
-    }
-    #services-title span:first-child {
         font-size: 3vw;
-        order: 2;
     }
-    #services-title span:last-child {
-        height: 20vw;
-        margin-bottom: 5%;
-    }
-    #services-content span {
+    #services-content div span {
         width: 100%;
         margin-top: 5%;
         padding-bottom: 5%;
         padding-top: 5%;
     }
-    #services-content span:first-child {
+    #services-content div span:first-child {
         border-bottom: 5px solid white;
         border-right: none;
     }
-    #services-content span:last-child {
+    #services-content div span:last-child {
         border-top: 5px solid white;
         border-left: none;
     }
-    #services-content span p {
+    #services-content div span p {
         width: 70%;
     }
     /*TRABAJOS*/
@@ -445,8 +438,14 @@ form span button:hover {
         font-size: 1em;
     }
     /* FOOTER */
+    #footer-main {
+        margin-bottom: 3%;
+    }
     #footer-content span {
-        width: 15%;
+        width: 50%;
+    }
+    #footer-content span a {
+        margin-right: 10%;
     }
     #footer-content span a img {
         width: 120%;
@@ -491,26 +490,20 @@ form span button:hover {
     #services-title {
         margin-top: 15%;
     }
-    #services-title span:first-child {
-        font-size: 2vw;
-    }
-    #services-title span:last-child {
-        height: 12vw;
-    }
-    #services-content span {
+    #services-content div span {
         margin-top: 10%;
         padding-bottom: 5%;
         padding-top: 5%;
     }
-    #services-content span:first-child {
+    #services-content div span:first-child {
         border-bottom: 5px solid white;
         border-right: none;
     }
-    #services-content span:last-child {
+    #services-content div span:last-child {
         border-top: 5px solid white;
         border-left: none;
     }
-    #services-content span p {
+    #services-content div span p {
         width: 80%;
     }
     /*TRABAJOS*/
@@ -532,8 +525,14 @@ form span button:hover {
         font-size: 1em;
     }
     /* FOOTER */
+    #footer-main {
+        margin-bottom: 1%;
+    }
     #footer-content span {
-        width: 15%;
+        width: 20%;
+    }
+    #footer-content span a {
+        margin-right: 5%;
     }
 }
 /* 769px — 1024px: Small screens, laptops */
@@ -584,27 +583,22 @@ form span button:hover {
     #services-title {
         width: 90%;
         margin-top: 15%;
+        font-size: 2vw;
         justify-content: space-between;
     }
-    #services-title span:first-child {
-        font-size: 2vw;
-    }
-    #services-title span:last-child {
-        height: 12vw;
-    }
-    #services-content span {
+    #services-content div span {
         margin-top: 5%;
         padding-bottom: 5%;
     }
-    #services-content span:first-child {
+    #services-content div span:first-child {
         border-bottom: 5px solid white;
         border-right: none;
     }
-    #services-content span:last-child {
+    #services-content div span:last-child {
         border-top: 5px solid white;
         border-left: none;
     }
-    #services-content span p {
+    #services-content div span p {
         width: 80%;
     }
     /*TRABAJOS*/
