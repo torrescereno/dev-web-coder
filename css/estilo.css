@@ -180,10 +180,10 @@ nav ul li a:hover {
 /* TRABAJOS */
 
 #jobs {
-    outline: 1px solid red;
+    /* outline: 1px solid red; */
 }
 #jobs a {
-    outline: 1px solid blue;
+    /* outline: 1px solid blue; */
 }
 #jobs-titile {
     font-family: 'Permanent Marker', cursive;
