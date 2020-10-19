@@ -50,6 +50,8 @@
      color: white;
      text-decoration: none;
  }
+ /* Main */
+
  #principal {
      opacity: 0;
      animation-name: welcome;
