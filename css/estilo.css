@@ -141,10 +141,6 @@
      font-family: 'Permanent Marker', cursive;
      font-size: 5em;
  }
- #services-title span img {
-     width: 50%;
-     height: 50%;
- }
  /* SERVICIO CONTENIDO */
 
  #services-content {
@@ -166,7 +162,8 @@
      border-radius: 5px;
  }
  #services-content span img {
-     width: 40%;
+     width: 50%;
+     height: 50%;
  }
  #services-content span h1 {
      width: 100%;
@@ -392,11 +389,9 @@
          margin-top: 20%;
          font-size: 3vw;
      }
-     /* #services-content div span {
-        margin-top: 5%;
-        padding-bottom: 5%;
-        padding-top: 5%;
-    } */
+     #services-content div span img {
+         margin-top: 10%;
+     }
      #services-content div span:first-child {
          border-bottom: 5px solid white;
          border-right: none;
