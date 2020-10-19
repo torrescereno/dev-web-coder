@@ -150,6 +150,7 @@ nav ul li a:hover {
 
 #services-content {
     width: 70%;
+    margin-bottom: 10%;
 }
 #services-content span {
     display: flex;
@@ -178,6 +179,12 @@ nav ul li a:hover {
 }
 /* TRABAJOS */
 
+#jobs {
+    outline: 1px solid red;
+}
+#jobs a {
+    outline: 1px solid blue;
+}
 #jobs-titile {
     font-family: 'Permanent Marker', cursive;
 }
@@ -525,6 +532,7 @@ form span button:hover {
     }
     /* FOOTER */
     #footer-main {
+        margin-top: 5%;
         margin-bottom: 1%;
     }
     #footer-content span {
