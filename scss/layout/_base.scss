@@ -1,0 +1,27 @@
+@import '../base/colors';
+@import '../base/fonts';
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    list-style: none;
+    color: $color-fonts;
+    text-decoration: none;
+}
+body {
+    width: 100%;
+    height: 100%;
+    font-family: $font-base;
+    background: $color-base;
+    animation: ruido 0.5s steps(10) infinite;
+}
+
+main #principal {
+    opacity: 0;
+    animation-name: welcome;
+    animation-duration: 3s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+}

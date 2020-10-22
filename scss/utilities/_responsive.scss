@@ -1,0 +1,318 @@
+@import '../base/colors';
+
+/* -------- Dispositivos moviles 480--------  */
+@media screen and (max-width: 480px) {
+    /*NAV*/
+    header nav {
+        justify-content: center;
+        margin-top: 5%;
+        ul {
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            li {
+                margin-right: 0;
+                font-size: 90%;
+            }
+        }
+    }
+ 
+    /*PEFIL*/
+    #about-text {
+        order: 2;
+        margin-bottom: 5%;
+
+        span:first-child {
+            font-size: 180%;
+            width: 100%;
+        }
+        span:last-child {
+            font-size: 100%;
+            width: 100%;
+        }
+
+    }
+
+    #about-image {
+        order: 1;
+        margin-top: 20vw;
+        img {
+            width: 50%;
+            margin-bottom: 5%;
+        }
+    }
+
+    /*SERVICIOS*/
+    #services-title {
+        margin-top: 20%;
+        font-size: 3vw;
+    }
+    #services-content div {
+        span {
+            p {
+                width: 80%;
+            }
+            img {
+                margin-top: 10%;
+            }
+        }
+
+        span:first-child {
+            border-bottom: 5px solid $color-fonts;
+            border-right: none;
+        }
+
+        span:last-child {
+            border-top: 5px solid $color-fonts;
+            border-left: none;
+        }
+    }
+
+    /*TRABAJOS*/
+    #jobs-titile h1 {
+        font-size: 10vw;
+        margin-top: 10vw;
+    }
+    .jobs-content {
+        width: 70vw;
+    }
+    /*CONTACTO*/
+    #contact-title {
+        margin-top: 20%;
+        flex-direction: column;
+    }
+    #contact-title {
+        
+        h1 {
+            font-size: 2em;
+        }
+
+        img {
+            height: 40%;
+            margin-left: 0%;
+            margin-top: 5%;
+        }
+    }
+
+    /* FORMULARIO */
+    form {
+        width: 75%;
+        h1 {
+            margin-bottom: 7%;
+        }
+    }
+
+    input {
+        font-size: 1em;
+    }
+    /* FOOTER */
+    #footer-main {
+        margin-bottom: 2%;
+    }
+    #footer-content {
+        span {
+            width: 50%;
+            a{
+                margin-right: 10%;
+
+                img{
+                    width: 120%;
+                    height: 120%;
+                }
+            }
+        }
+    } 
+   
+}
+/* 481px — 768px: iPads, Tablets */
+
+@media (min-width: 481px) and (max-width:768px) {
+    /* NAV */
+    header nav {
+        margin-top: 2%;
+    }
+    /*PEFIL*/
+    #about {
+        flex-direction: column;
+    }
+    #about-text {
+        order: 2;
+        margin-bottom: 10%;
+        span {
+            width: 100%;
+        }
+        span:first-child {
+            font-size: 350%;
+        }
+        span:last-child {
+            font-size: 120%;
+        }
+    }
+ 
+    #about-image {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        order: 1;
+        margin-top: 15vw;
+        img {
+            width: 50%;
+        }
+    }
+
+    /*SERVICIOS*/
+    #services-title {
+        margin-top: 15%;
+    }
+    #services-content {
+        div {
+            span {
+                margin-top: 10%;
+                padding-bottom: 5%;
+                padding-top: 5%;
+            }
+            span:first-child {
+                border-bottom: 5px solid $color-fonts;
+                border-right: none;
+            }
+            span:last-child {
+                border-top: 5px solid $color-fonts;
+                border-left: none;
+            }
+            p {
+                width: 80%;
+            }
+        }
+    } 
+
+    /*TRABAJOS*/
+    #jobs-titile h1 {
+        font-size: 10vw;
+        margin-top: 10vw;
+    }
+    .jobs-content {
+        width: 70vw;
+    }
+    /* FORMULARIO */
+    form {
+        width: 75%;
+        h1 {
+            margin-bottom: 7%;
+        }
+    }
+    input {
+        font-size: 1em;
+    }
+    /* FOOTER */
+    #footer-main {
+        margin-top: 5%;
+        margin-bottom: 1%;
+    }
+    #footer-content {
+        span {
+            width: 20%;
+            a{
+                margin-right: 5%;
+            }
+        }
+    } 
+}
+/* 769px — 1024px: Small screens, laptops */
+
+@media (min-width: 769px) and (max-width:1024px) {
+    #about-text span:last-child {
+        font-size: 100%;
+    }
+}
+/* 1025px — 1200px: Desktops, large screens */
+
+@media (min-width: 1025px) and (max-width:1200px) {
+    #about-text span:last-child {
+        font-size: 200%;
+    }
+}
+/* 769px — 1200px Desktops, large screens por defecto */
+
+@media (min-width: 769px) and (max-width:1200px) {
+    /*PEFIL*/
+    #about {
+        flex-direction: column;
+    }
+    #about-text {
+        position: relative;
+        order: 2;
+        width: 80%;
+        margin-bottom: 5%;
+        span {
+            width: 100%;
+        }
+        span:first-child {
+            font-size: 450%;
+        }
+        span:last-child {
+            font-size: 200%;
+        }
+    }
+
+    #about-image {
+        width: 100%;
+        order: 1;
+        margin-top: 7%;
+        img{
+            width: 50%;
+        }
+    }
+
+    /*SERVICIOS*/
+    #services-title {
+        width: 90%;
+        margin-top: 15%;
+        font-size: 2vw;
+        justify-content: space-between;
+    }
+    #services-content{
+        div {
+            span {
+                margin-top: 5%;
+                padding-bottom: 5%;
+            }
+            span:first-child {
+                border-bottom: 5px solid $color-fonts;
+                border-right: none;
+            }
+            span:last-child {
+                border-top: 5px solid $color-fonts;
+                border-left: none;
+            }
+            p{
+                width: 80%;
+            }
+        }
+    } 
+ 
+    /*TRABAJOS*/
+    #jobs-titile {
+        margin-top: 5%;
+        h1{
+            font-size: 10vw;
+        }
+    }
+
+    .jobs-content {
+        width: 60vw;
+    }
+    /* FORMULARIO */
+    form {
+        width: 75%;
+        h1{
+            margin-bottom: 7%;
+        }
+    }
+    input {
+        font-size: 1em;
+    }
+    /* FOOTER */
+    #footer-content span {
+        width: 15%;
+    }
+}
