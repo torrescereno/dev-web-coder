@@ -1,8 +1,11 @@
+@import '../base/colors';
+
+
 @keyframes ruido {
-    0% {
+    from {
         background-position: 0 0;
     }
-    100% {
+    to {
         background-position: 150% 150%;
     }
 }
@@ -30,14 +33,13 @@
         top: 0vh;
     }
 }
+
+
 @keyframes wkup-nav {
-    0% {
-        bottom: 0px;
+    from {
+        border-bottom: 0px solid $color-fonts;
     }
-    50% {
-        bottom: 4px;
-    }
-    100% {
-        bottom: 0px;
+    to {
+        border-bottom: 1px solid $color-fonts;
     }
 }

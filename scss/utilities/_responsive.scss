@@ -75,6 +75,20 @@
     }
     .jobs-content {
         width: 70vw;
+
+        span{
+
+            h2{
+                font-size: 1.5em;
+            }
+
+            p{
+                font-size: 1em;
+                border-top: 1px solid $color-fonts;
+                border-bottom: 1px solid $color-fonts;
+            }
+        }
+
     }
     /*CONTACTO*/
     #contact-title {
