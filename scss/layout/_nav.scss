@@ -28,14 +28,21 @@ header {
 
                 a {
                     position: relative;
+                    padding-bottom: 5px;
                     font-weight: bold;
-                    color: $color-fonts;
+                    color: $color-fonts;       
+                    background-image: linear-gradient(currentColor, currentColor);
+                    background-position: 0% 100%;
+                    background-repeat: no-repeat;
+                    background-size: 0% 2px;
+                    transition: background-size .3s;
                 }
 
-                a:hover {
-                    animation: wkup-nav 0.5s 0.2s forwards;
+                a:hover, a:focus {
                     color: $color-fonts;
+                    background-size: 100% 2px;
                     text-decoration: none;
+                    
                 }
             }
         }

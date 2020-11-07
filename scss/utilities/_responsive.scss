@@ -169,6 +169,7 @@
         justify-content: center;
         order: 1;
         margin-top: 15vw;
+        margin-bottom: 5vw;
         img {
             width: 50%;
         }
@@ -237,6 +238,7 @@
     #about-text span:last-child {
         font-size: 100%;
     }
+    
 }
 /* 1025px — 1200px: Desktops, large screens */
 
@@ -271,7 +273,8 @@
     #about-image {
         width: 100%;
         order: 1;
-        margin-top: 7%;
+        margin-top: 10%;
+        margin-bottom: 5%;
         img{
             width: 50%;
         }

@@ -46,11 +46,17 @@ header {
         font-size: 1.2em; }
         header nav ul li a {
           position: relative;
+          padding-bottom: 5px;
           font-weight: bold;
-          color: #fff; }
-        header nav ul li a:hover {
-          animation: wkup-nav 0.5s 0.2s forwards;
           color: #fff;
+          background-image: linear-gradient(currentColor, currentColor);
+          background-position: 0% 100%;
+          background-repeat: no-repeat;
+          background-size: 0% 2px;
+          transition: background-size .3s; }
+        header nav ul li a:hover, header nav ul li a:focus {
+          color: #fff;
+          background-size: 100% 2px;
           text-decoration: none; }
 
 #home {
@@ -141,6 +147,13 @@ header {
     margin-top: 5%;
     font-size: 120%; }
 
+#service-commit {
+  border-top: 4px solid #fff;
+  border-radius: 2px;
+  width: 75%; }
+  #service-commit span {
+    margin-top: 5%; }
+
 #jobs-titile {
   font-family: "Permanent Marker", cursive; }
   #jobs-titile h1 {
@@ -149,7 +162,7 @@ header {
 .jobs-content {
   width: 50vw;
   height: 50vh;
-  background: #808080;
+  background: rgba(255, 255, 255, 0.7);
   transition: background 0.5s;
   cursor: pointer; }
   .jobs-content span {
@@ -246,7 +259,7 @@ input {
   border-radius: 5px; }
 
 input:hover {
-  border: 1px solid #808080; }
+  border: 1px solid rgba(255, 255, 255, 0.7); }
 
 #footer-content {
   border-top: 5px solid #fff; }
@@ -396,7 +409,8 @@ input:hover {
     display: flex;
     justify-content: center;
     order: 1;
-    margin-top: 15vw; }
+    margin-top: 15vw;
+    margin-bottom: 5vw; }
     #about-image img {
       width: 50%; }
   /*SERVICIOS*/
@@ -465,7 +479,8 @@ input:hover {
   #about-image {
     width: 100%;
     order: 1;
-    margin-top: 7%; }
+    margin-top: 10%;
+    margin-bottom: 5%; }
     #about-image img {
       width: 50%; }
   /*SERVICIOS*/
