@@ -42,6 +42,14 @@
         }
     }
 
+    .skills-image{
+    
+        img{
+            width: 60%;
+        }
+    }
+
+
     /*SERVICIOS*/
     #services-title {
         margin-top: 20%;
@@ -151,7 +159,7 @@
     }
     #about-text {
         order: 2;
-        margin-bottom: 10%;
+        margin-bottom: 5%;
         span {
             width: 100%;
         }
@@ -183,19 +191,23 @@
         div {
             span {
                 margin-top: 10%;
-                padding-bottom: 5%;
-                padding-top: 5%;
+
+                img {
+                    width: 35%;
+                }
             }
             span:first-child {
                 border-bottom: 5px solid $color-fonts;
                 border-right: none;
+                padding-bottom: 5%;
             }
             span:last-child {
                 border-top: 5px solid $color-fonts;
                 border-left: none;
+                padding-top: 5%;
             }
             p {
-                width: 80%;
+                width: 90%;
             }
         }
     } 
@@ -291,18 +303,24 @@
         div {
             span {
                 margin-top: 5%;
-                padding-bottom: 5%;
+
+                img {
+                    width: 30%;
+                }
             }
             span:first-child {
                 border-bottom: 5px solid $color-fonts;
                 border-right: none;
+                padding-bottom: 5%;
             }
             span:last-child {
                 border-top: 5px solid $color-fonts;
                 border-left: none;
+                padding-top: 5%;
+                padding-bottom: 5%;
             }
-            p{
-                width: 80%;
+            p {
+                width: 90%;
             }
         }
     } 

@@ -30,3 +30,33 @@
         height: 100%;
     }
 }
+
+
+.skills-text{
+    font-family: $font-page;
+}
+
+.skills-image{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+   
+
+    img{
+        width: 40%;
+        cursor: pointer;   
+    }
+}
+
+.modal-custom{
+    h2 {
+        color: $color-base;
+    }
+    p {
+        color: $color-base;
+        font-size: 1.3em;
+    }
+   
+}

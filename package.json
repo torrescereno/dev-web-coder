@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/torrescereno/torrescereno.git"
+    "url": "git+https://github.com/torrescereno/dev-web-coder.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/torrescereno/torrescereno/issues"
+    "url": "https://github.com/torrescereno/dev-web-coder/issues"
   },
-  "homepage": "https://github.com/torrescereno/torrescereno#readme",
+  "homepage": "https://github.com/torrescereno/dev-web-coder#readme",
   "devDependencies": {
     "node-sass": "^4.14.1",
     "nodemon": "^2.0.6"
