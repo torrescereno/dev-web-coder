@@ -183,6 +183,13 @@
         }
     }
 
+    .skills-image{
+    
+        img{
+            width: 60%;
+        }
+    }
+
     /*SERVICIOS*/
     #services-title {
         margin-top: 15%;
@@ -193,7 +200,7 @@
                 margin-top: 10%;
 
                 img {
-                    width: 35%;
+                    width: 30%;
                 }
             }
             span:first-child {
@@ -305,7 +312,7 @@
                 margin-top: 5%;
 
                 img {
-                    width: 30%;
+                    width: 25%;
                 }
             }
             span:first-child {
@@ -321,6 +328,7 @@
             }
             p {
                 width: 90%;
+                font-size: 1.5em;
             }
         }
     } 

@@ -111,8 +111,8 @@ header {
   display: flex;
   justify-content: center; }
   #about-image img {
-    width: 100%;
-    height: 100%; }
+    width: 90%;
+    height: 90%; }
 
 .skills-text {
   font-family: "Permanent Marker", cursive; }
@@ -433,13 +433,15 @@ input:hover {
     margin-bottom: 5vw; }
     #about-image img {
       width: 50%; }
+  .skills-image img {
+    width: 60%; }
   /*SERVICIOS*/
   #services-title {
     margin-top: 15%; }
   #services-content div span {
     margin-top: 10%; }
     #services-content div span img {
-      width: 35%; }
+      width: 30%; }
   #services-content div span:first-child {
     border-bottom: 5px solid #fff;
     border-right: none;
@@ -514,7 +516,7 @@ input:hover {
   #services-content div span {
     margin-top: 5%; }
     #services-content div span img {
-      width: 30%; }
+      width: 25%; }
   #services-content div span:first-child {
     border-bottom: 5px solid #fff;
     border-right: none;
@@ -525,7 +527,8 @@ input:hover {
     padding-top: 5%;
     padding-bottom: 5%; }
   #services-content div p {
-    width: 90%; }
+    width: 90%;
+    font-size: 1.5em; }
   /*TRABAJOS*/
   #jobs-titile {
     margin-top: 5%; }
