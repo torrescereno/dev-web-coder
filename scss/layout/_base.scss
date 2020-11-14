@@ -11,6 +11,11 @@
     color: $color-fonts;
     text-decoration: none;
 }
+
+html{
+    min-height: 100vh;
+}
+
 body {
     width: 100%;
     height: 100%;

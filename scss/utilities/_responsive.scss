@@ -16,6 +16,37 @@
             }
         }
     }
+
+    /* HOME */
+
+    #home {
+    
+        #home-content {
+          
+            span {
+               
+                p {
+                    font-size: 5em;
+                }
+        
+                #home-welcome {
+                    font-size: 2.5em;
+                    
+                }
+            }
+        }
+        
+        #home-img{
+       
+            height: 70%;
+            img{
+                
+                height: 28%;
+            };
+        }
+        
+    }
+    
  
     /*PEFIL*/
     #about-text {
@@ -153,6 +184,39 @@
     header nav {
         margin-top: 2%;
     }
+
+    /* HOME */
+
+    #home {
+    
+        #home-content {
+          
+            span {
+               
+                p {
+                    font-size: 7em;
+                }
+        
+                #home-welcome {
+                    font-size: 3.5em;
+                    
+                }
+            }
+        }
+        
+        #home-img{
+       
+            height: 70%;
+            img{
+                
+                height: 30%;
+            };
+        }
+        
+    }
+    
+
+
     /*PEFIL*/
     #about {
         flex-direction: column;
@@ -269,6 +333,37 @@
 /* 769px — 1200px Desktops, large screens por defecto */
 
 @media (min-width: 769px) and (max-width:1200px) {
+
+    /* HOME */
+
+    #home {
+    
+        #home-content {
+          
+            span {
+               
+                p {
+                    font-size: 15em;
+                }
+        
+                #home-welcome {
+                    font-size: 7em;
+                    
+                }
+            }
+        }
+        
+        #home-img{
+       
+            height: 75%;
+            img{
+                
+                height: 30%;
+            };
+        }
+        
+    }
+
     /*PEFIL*/
     #about {
         flex-direction: column;
