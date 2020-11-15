@@ -1,5 +1,8 @@
 @import '../base/colors';
 @import '../base/fonts';
+@import '../base/variables';
+@import '../utilities/_mixin.scss';
+
 
 #jobs-titile {
     font-family: $font-page;
@@ -10,10 +13,9 @@
 }
 .jobs-content {
     width: 50vw;
-    height: 50vh;
-    background: $color-fondo;
-    transition: background 0.5s;
+    height: 50vh;    
     cursor: pointer;
+    
     
     span{
         opacity: 0;
@@ -47,12 +49,34 @@
 
     span:hover {
         animation-name: welcome;
-        animation-duration: 1s;
+        animation-duration: 4s;
         animation-fill-mode: forwards;
     }
 }
 
-.jobs-content:hover {
+#fondo-1{
+    @include proyecto($proyecto-1);
+}
+
+#fondo-2{
+    @include proyecto($proyecto-2);
+}
+
+#fondo-3{
+    @include proyecto($proyecto-3);
+}
+
+#fondo-1:hover{
     background: transparent;
     border: 1px solid $color-fonts;
-}
+ }
+
+ #fondo-2:hover{
+    background: transparent;
+    border: 1px solid $color-fonts;
+ }
+
+ #fondo-3:hover{
+    background: transparent;
+    border: 1px solid $color-fonts;
+ }

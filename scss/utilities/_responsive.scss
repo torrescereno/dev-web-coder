@@ -1,456 +1,422 @@
-@import '../base/colors';
+@import "../base/colors";
 
 /* -------- Dispositivos moviles 480--------  */
 @media screen and (max-width: 480px) {
-    /*NAV*/
-    header nav {
-        justify-content: center;
-        margin-top: 5%;
-        ul {
-            display: flex;
-            justify-content: space-around;
-            width: 100%;
-            li {
-                margin-right: 0;
-                font-size: 90%;
-            }
+  /*NAV*/
+  header nav {
+    justify-content: center;
+    margin-top: 5%;
+    ul {
+      display: flex;
+      justify-content: space-around;
+      width: 100%;
+      li {
+        margin-right: 0;
+        font-size: 90%;
+      }
+    }
+  }
+
+  /* HOME */
+
+  #home {
+    #home-content {
+      span {
+        p {
+          font-size: 5em;
         }
+
+        #home-welcome {
+          font-size: 2.5em;
+        }
+      }
     }
 
-    /* HOME */
-
-    #home {
-    
-        #home-content {
-          
-            span {
-               
-                p {
-                    font-size: 5em;
-                }
-        
-                #home-welcome {
-                    font-size: 2.5em;
-                    
-                }
-            }
-        }
-        
-        #home-img{
-       
-            height: 70%;
-            img{
-                
-                height: 28%;
-            };
-        }
-        
+    #home-img {
+      height: 70%;
+      img {
+        height: 28%;
+      }
     }
-    
- 
-    /*PEFIL*/
-    #about-text {
-        order: 2;
-        margin-bottom: 5%;
+  }
 
-        span:first-child {
-            font-size: 180%;
-            width: 100%;
-        }
-        span:last-child {
-            font-size: 100%;
-            width: 100%;
-        }
+  /*PEFIL*/
+  #about-text {
+    order: 2;
+    margin-bottom: 5%;
 
+    span:first-child {
+      font-size: 180%;
+      width: 100%;
     }
+    span:last-child {
+      font-size: 100%;
+      width: 100%;
+    }
+  }
 
-    #about-image {
-        order: 1;
-        margin-top: 20vw;
-        img {
-            width: 50%;
-            margin-bottom: 5%;
-        }
+  #about-image {
+    order: 1;
+    margin-top: 20vw;
+    img {
+      width: 50%;
+      margin-bottom: 5%;
+    }
+  }
+
+  .skills-image {
+    img {
+      width: 60%;
+    }
+  }
+
+  /*SERVICIOS*/
+  #services-title {
+    margin-top: 20%;
+    font-size: 3vw;
+  }
+  #services-content div {
+    span {
+      p {
+        width: 80%;
+      }
+      img {
+        margin-top: 10%;
+      }
     }
 
-    .skills-image{
-    
-        img{
-            width: 60%;
-        }
+    span:first-child {
+      border-bottom: 5px solid $color-fonts;
+      border-right: none;
     }
 
-
-    /*SERVICIOS*/
-    #services-title {
-        margin-top: 20%;
-        font-size: 3vw;
+    span:last-child {
+      border-top: 5px solid $color-fonts;
+      border-left: none;
     }
-    #services-content div {
-        span {
-            p {
-                width: 80%;
-            }
-            img {
-                margin-top: 10%;
-            }
-        }
+  }
 
-        span:first-child {
-            border-bottom: 5px solid $color-fonts;
-            border-right: none;
-        }
+  /*TRABAJOS*/
+  #jobs-titile h1 {
+    font-size: 10vw;
+    margin-top: 10vw;
+  }
+  .jobs-content {
+    width: 70vw;
 
-        span:last-child {
-            border-top: 5px solid $color-fonts;
-            border-left: none;
-        }
-    }
+    span {
+      h2 {
+        font-size: 1.5em;
+      }
 
-    /*TRABAJOS*/
-    #jobs-titile h1 {
-        font-size: 10vw;
-        margin-top: 10vw;
-    }
-    .jobs-content {
-        width: 70vw;
-
-        span{
-
-            h2{
-                font-size: 1.5em;
-            }
-
-            p{
-                font-size: 1em;
-                border-top: 1px solid $color-fonts;
-                border-bottom: 1px solid $color-fonts;
-            }
-        }
-
-    }
-    /*CONTACTO*/
-    #contact-title {
-        margin-top: 20%;
-        flex-direction: column;
-    }
-    #contact-title {
-        
-        h1 {
-            font-size: 2em;
-        }
-
-        img {
-            height: 40%;
-            margin-left: 0%;
-            margin-top: 5%;
-        }
-    }
-
-    /* FORMULARIO */
-    form {
-        width: 75%;
-        h1 {
-            margin-bottom: 7%;
-        }
-    }
-
-    input {
+      p {
         font-size: 1em;
+        border-top: 1px solid $color-fonts;
+        border-bottom: 1px solid $color-fonts;
+      }
     }
-    /* FOOTER */
-    #footer-main {
-        margin-bottom: 2%;
+  }
+  /*CONTACTO*/
+  #contact-title {
+    margin-top: 20%;
+    flex-direction: column;
+  }
+  #contact-title {
+    h1 {
+      font-size: 2em;
     }
-    #footer-content {
-        span {
-            width: 50%;
-            a{
-                margin-right: 10%;
 
-                img{
-                    width: 120%;
-                    height: 120%;
-                }
-            }
+    img {
+      height: 40%;
+      margin-left: 0%;
+      margin-top: 5%;
+    }
+  }
+
+  /* FORMULARIO */
+  form {
+    width: 75%;
+    h1 {
+      margin-bottom: 7%;
+    }
+  }
+
+  input {
+    font-size: 1em;
+  }
+  /* FOOTER */
+  #footer-main {
+    margin-bottom: 2%;
+  }
+  #footer-content {
+    span {
+      width: 50%;
+      a {
+        margin-right: 10%;
+
+        img {
+          width: 120%;
+          height: 120%;
         }
-    } 
-   
+      }
+    }
+  }
 }
 /* 481px — 768px: iPads, Tablets */
 
-@media (min-width: 481px) and (max-width:768px) {
-    /* NAV */
-    header nav {
-        margin-top: 2%;
+@media (min-width: 481px) and (max-width: 768px) {
+  /* NAV */
+  header nav {
+    margin-top: 2%;
+  }
+
+  /* HOME */
+
+  #home {
+    #home-content {
+      span {
+        p {
+          font-size: 7em;
+        }
+
+        #home-welcome {
+          font-size: 3.5em;
+        }
+      }
     }
 
-    /* HOME */
-
-    #home {
-    
-        #home-content {
-          
-            span {
-               
-                p {
-                    font-size: 7em;
-                }
-        
-                #home-welcome {
-                    font-size: 3.5em;
-                    
-                }
-            }
-        }
-        
-        #home-img{
-       
-            height: 70%;
-            img{
-                
-                height: 30%;
-            };
-        }
-        
+    #home-img {
+      height: 70%;
+      img {
+        height: 30%;
+      }
     }
-    
+  }
 
+  /*PEFIL*/
+  #about {
+    flex-direction: column;
+  }
+  #about-text {
+    order: 2;
+    margin-bottom: 5%;
+    span {
+      width: 100%;
+    }
+    span:first-child {
+      font-size: 350%;
+    }
+    span:last-child {
+      font-size: 120%;
+    }
+  }
 
-    /*PEFIL*/
-    #about {
-        flex-direction: column;
+  #about-image {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    order: 1;
+    margin-top: 15vw;
+    margin-bottom: 5vw;
+    img {
+      width: 50%;
     }
-    #about-text {
-        order: 2;
-        margin-bottom: 5%;
-        span {
-            width: 100%;
-        }
-        span:first-child {
-            font-size: 350%;
-        }
-        span:last-child {
-            font-size: 120%;
-        }
+  }
+
+  .skills-image {
+    img {
+      width: 60%;
     }
- 
-    #about-image {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        order: 1;
-        margin-top: 15vw;
-        margin-bottom: 5vw;
+  }
+
+  /*SERVICIOS*/
+  #services-title {
+    margin-top: 15%;
+  }
+  #services-content {
+    div {
+      span {
+        margin-top: 10%;
+
         img {
-            width: 50%;
+          width: 30%;
         }
+      }
+      span:first-child {
+        border-bottom: 5px solid $color-fonts;
+        border-right: none;
+        padding-bottom: 5%;
+      }
+      span:last-child {
+        border-top: 5px solid $color-fonts;
+        border-left: none;
+        padding-top: 5%;
+      }
+      p {
+        width: 90%;
+      }
     }
+  }
 
-    .skills-image{
-    
-        img{
-            width: 60%;
-        }
+  /*TRABAJOS*/
+  #jobs-titile h1 {
+    font-size: 10vw;
+    margin-top: 10vw;
+  }
+  .jobs-content {
+    width: 70vw;
+  }
+  /* FORMULARIO */
+  form {
+    width: 75%;
+    h1 {
+      margin-bottom: 7%;
     }
-
-    /*SERVICIOS*/
-    #services-title {
-        margin-top: 15%;
+  }
+  input {
+    font-size: 1em;
+  }
+  /* FOOTER */
+  #footer-main {
+    margin-top: 5%;
+    margin-bottom: 1%;
+  }
+  #footer-content {
+    span {
+      width: 20%;
+      a {
+        margin-right: 5%;
+      }
     }
-    #services-content {
-        div {
-            span {
-                margin-top: 10%;
-
-                img {
-                    width: 30%;
-                }
-            }
-            span:first-child {
-                border-bottom: 5px solid $color-fonts;
-                border-right: none;
-                padding-bottom: 5%;
-            }
-            span:last-child {
-                border-top: 5px solid $color-fonts;
-                border-left: none;
-                padding-top: 5%;
-            }
-            p {
-                width: 90%;
-            }
-        }
-    } 
-
-    /*TRABAJOS*/
-    #jobs-titile h1 {
-        font-size: 10vw;
-        margin-top: 10vw;
-    }
-    .jobs-content {
-        width: 70vw;
-    }
-    /* FORMULARIO */
-    form {
-        width: 75%;
-        h1 {
-            margin-bottom: 7%;
-        }
-    }
-    input {
-        font-size: 1em;
-    }
-    /* FOOTER */
-    #footer-main {
-        margin-top: 5%;
-        margin-bottom: 1%;
-    }
-    #footer-content {
-        span {
-            width: 20%;
-            a{
-                margin-right: 5%;
-            }
-        }
-    } 
+  }
 }
 /* 769px — 1024px: Small screens, laptops */
 
-@media (min-width: 769px) and (max-width:1024px) {
-    #about-text span:last-child {
-        font-size: 100%;
-    }
-    
+@media (min-width: 769px) and (max-width: 1024px) {
+  #about-text span:last-child {
+    font-size: 100%;
+  }
 }
 /* 1025px — 1200px: Desktops, large screens */
 
-@media (min-width: 1025px) and (max-width:1200px) {
-    #about-text span:last-child {
-        font-size: 200%;
-    }
+@media (min-width: 1025px) and (max-width: 1200px) {
+  #about-text span:last-child {
+    font-size: 200%;
+  }
 }
 /* 769px — 1200px Desktops, large screens por defecto */
 
-@media (min-width: 769px) and (max-width:1200px) {
+@media (min-width: 769px) and (max-width: 1200px) {
+  /* HOME */
 
-    /* HOME */
+  #home {
+    #home-content {
+      span {
+        p {
+          font-size: 15em;
+        }
 
-    #home {
-    
-        #home-content {
-          
-            span {
-               
-                p {
-                    font-size: 15em;
-                }
-        
-                #home-welcome {
-                    font-size: 7em;
-                    
-                }
-            }
+        #home-welcome {
+          font-size: 7em;
         }
-        
-        #home-img{
-       
-            height: 75%;
-            img{
-                
-                height: 30%;
-            };
-        }
-        
+      }
     }
 
-    /*PEFIL*/
-    #about {
-        flex-direction: column;
+    #home-img {
+      height: 75%;
+      img {
+        height: 30%;
+      }
     }
-    #about-text {
-        position: relative;
-        order: 2;
-        width: 80%;
-        margin-bottom: 5%;
-        span {
-            width: 100%;
-        }
-        span:first-child {
-            font-size: 450%;
-        }
-        span:last-child {
-            font-size: 200%;
-        }
-    }
+  }
 
-    #about-image {
-        width: 100%;
-        order: 1;
-        margin-top: 10%;
-        margin-bottom: 5%;
-        img{
-            width: 50%;
-        }
+  /*PEFIL*/
+  #about {
+    flex-direction: column;
+  }
+  #about-text {
+    position: relative;
+    order: 2;
+    width: 80%;
+    margin-bottom: 5%;
+    span {
+      width: 100%;
     }
-
-    /*SERVICIOS*/
-    #services-title {
-        width: 90%;
-        margin-top: 15%;
-        font-size: 2vw;
-        justify-content: space-between;
+    span:first-child {
+      font-size: 450%;
     }
-    #services-content{
-        div {
-            span {
-                margin-top: 5%;
+    span:last-child {
+      font-size: 200%;
+    }
+  }
 
-                img {
-                    width: 25%;
-                }
-            }
-            span:first-child {
-                border-bottom: 5px solid $color-fonts;
-                border-right: none;
-                padding-bottom: 5%;
-            }
-            span:last-child {
-                border-top: 5px solid $color-fonts;
-                border-left: none;
-                padding-top: 5%;
-                padding-bottom: 5%;
-            }
-            p {
-                width: 90%;
-                font-size: 1.5em;
-            }
-        }
-    } 
- 
-    /*TRABAJOS*/
-    #jobs-titile {
+  #about-image {
+    width: 100%;
+    order: 1;
+    margin-top: 10%;
+    margin-bottom: 5%;
+    img {
+      width: 50%;
+    }
+  }
+
+  /*SERVICIOS*/
+  #services-title {
+    width: 90%;
+    margin-top: 15%;
+    font-size: 2vw;
+    justify-content: space-between;
+  }
+  #services-content {
+    div {
+      span {
         margin-top: 5%;
-        h1{
-            font-size: 10vw;
-        }
-    }
 
-    .jobs-content {
-        width: 60vw;
-    }
-    /* FORMULARIO */
-    form {
-        width: 75%;
-        h1{
-            margin-bottom: 7%;
+        img {
+          width: 25%;
         }
+      }
+      span:first-child {
+        border-bottom: 5px solid $color-fonts;
+        border-right: none;
+        padding-bottom: 5%;
+      }
+      span:last-child {
+        border-top: 5px solid $color-fonts;
+        border-left: none;
+        padding-top: 5%;
+        padding-bottom: 5%;
+      }
+      p {
+        width: 90%;
+        font-size: 1.5em;
+      }
     }
-    input {
-        font-size: 1em;
+  }
+
+  /*TRABAJOS*/
+  #jobs-titile {
+    margin-top: 5%;
+    h1 {
+      font-size: 10vw;
     }
-    /* FOOTER */
-    #footer-content span {
-        width: 15%;
+  }
+
+  .jobs-content {
+    width: 60vw;
+  }
+  /* FORMULARIO */
+  form {
+    width: 75%;
+    h1 {
+      margin-bottom: 7%;
     }
+  }
+  input {
+    font-size: 1em;
+  }
+  /* FOOTER */
+  #footer-content span {
+    width: 15%;
+  }
 }
