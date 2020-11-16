@@ -1,5 +1,4 @@
 @charset "UTF-8";
-/* Imagenes de proyecto */
 * {
   margin: 0;
   padding: 0;
@@ -105,7 +104,7 @@ header {
     opacity: 0;
     animation-name: welcome;
     animation-duration: 1s;
-    animation-delay: 3s;
+    animation-delay: 2s;
     animation-fill-mode: forwards; }
     #home #home-img img {
       height: 35%; }
@@ -192,7 +191,6 @@ header {
   #service-commit span {
     margin-top: 5%; }
 
-/* Imagenes de proyecto */
 #jobs-titile {
   font-family: "Permanent Marker", cursive; }
   #jobs-titile h1 {
